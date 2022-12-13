@@ -119,9 +119,10 @@ p {
   margin-left: 2.4rem;
 }
 
-label{
+label {
   visibility: hidden;
 }
+
 @keyframes pop {
   0% {
     transform: scale(1.5);
