@@ -1,8 +1,8 @@
 :root {
-  --color-primary: #6070ff;
+  --color-primary: #5261ff;
   --color-secondary: #fff;
   --color-heading: #172b4d;
-  --color-btn-text: #396df2;
+  --color-btn-text: #1f5bf4;
   --font-regular: 400;
   --font-bold: 700;
 }
@@ -119,6 +119,10 @@ p {
   margin-left: 2.4rem;
 }
 
+label {
+  visibility: hidden;
+}
+
 @keyframes pop {
   0% {
     transform: scale(1.5);
@@ -183,7 +187,7 @@ p {
 }
 
 .client-info {
-  color: #7a869a;
+  color: #69768c;
 }
 
 .clint-info-text {

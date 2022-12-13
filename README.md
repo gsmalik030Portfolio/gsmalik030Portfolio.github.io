@@ -187,6 +187,19 @@ Example:
 - Twitter: [@twitterhandle](https://twitter.com/gsmalik030)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ghulam-subbhani-4b1281252/)
 
+👤 **Ivan Ludick**
+
+- GitHub: [@githubhandle](https://github.com/IvanLudick)
+- Twitter: [@twitterhandle](https://twitter.com/Ivan_Ludick258)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ivan-ludick-11a055243/)
+
+
+👤 **Eugene Iyukhun**
+
+- GitHub: [@githubhandle](https://github.com/Eugeneiyukhun)
+- Twitter: [@twitterhandle](https://twitter.com/Eugeneiyukhun)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/Eugeneiyukhun)
+
 
 <!-- FUTURE FEATURES -->
 
