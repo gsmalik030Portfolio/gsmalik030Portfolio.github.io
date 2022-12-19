@@ -90,9 +90,20 @@ p {
 }
 
 .mobile-nav {
-  margin-right: 3.6rem;
   width: 1.8rem;
   height: 1.2rem;
+  margin: 3.6rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-secondary);
+  font-weight: 600;
+  font-size: 3.2rem;
+  gap: 4rem;
+  align-items: flex-start;
+  padding: 4.8rem 0 0 2.8rem;
 }
 
 .desktop-nav {
@@ -102,6 +113,13 @@ p {
   gap: 3.2rem;
   margin-right: 15.4rem;
   display: none;
+}
+
+.cellphone-nav {
+  background: var(--color-primary);
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-container {
