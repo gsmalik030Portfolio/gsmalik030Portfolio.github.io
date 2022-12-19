@@ -16,24 +16,28 @@
       <a href="#" class="logo">My Logo </a>
       <nav class="desktop-nav-display">
         <img
-          id="mobile-icon"
-          class="mobile-nav"
+          class="mobile-nav cell-nav"
           src="images/Union.png"
           alt=" Navigation "
         />
+
         <ul class="desktop-nav">
-          <li>Portfolio</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <nav class="cellphone-nav">
         <ul class="nav">
-          <li>Portfolio</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-        <img class="mobile-nav" src="images/Icon.svg" alt=" Navigation" />
+        <img
+          class="mobile-nav-icon cell-nav"
+          src="images/Icon.svg"
+          alt=" Navigation"
+        />
       </nav>
     </header>
     <div class="container">
@@ -78,7 +82,7 @@
       </section>
     </div>
 
-    <section title="portfolio-snapshot" class="card-works-box">
+    <section id="portfolio" title="portfolio-snapshot" class="card-works-box">
       <article class="card-work flex-order">
         <picture>
           <source
@@ -226,7 +230,7 @@
         </div>
       </article>
     </section>
-    <section class="about-contact-box">
+    <section id="about" class="about-contact-box">
       <section aria-labelledby="about-myself" class="about-myself about-box">
         <article>
           <h2 id="about-myself" class="heading-about">About Myself</h2>
@@ -304,6 +308,7 @@
         </article>
       </section>
       <form
+        id="contact"
         class="form-container"
         action="https://formspree.io/f/xqkjrppo"
         method="post"

@@ -43,6 +43,7 @@ h2 {
 a {
   text-decoration: none;
   cursor: pointer;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -89,7 +90,7 @@ p {
   border-bottom-left-radius: 5rem;
 }
 
-.mobile-nav {
+.cell-nav{
   width: 1.8rem;
   height: 1.2rem;
   margin: 3.6rem;
@@ -130,6 +131,11 @@ p {
 .active {
   display: flex;
 }
+
+.HamBurger-hide{
+  visibility: hidden;
+}
+
 
 .header-container {
   width: 100%;

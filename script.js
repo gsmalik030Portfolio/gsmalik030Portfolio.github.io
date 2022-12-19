@@ -1,5 +1,16 @@
-const hamburgerMenu = document.getElementById("#mobile-icon");
+const hamBurger = document.querySelector(".mobile-nav");
+const cellphoneNav = document.querySelector(".cellphone-nav");
+const iconHamburger = document.querySelector(".mobile-nav-icon")
 
-hamburgerMenu.addEventListener("click", () => {
-  hamburgerMenu.classList.add("active");
-});
+function displayNav() {
+  cellphoneNav.classList.toggle("active");
+  hamBurger.classList.toggle("HamBurger-hide")
+}
+function removeNav() {
+  cellphoneNav.classList.remove("active");
+  hamBurger.classList.remove("HamBurger-hide")
+}
+
+hamBurger.addEventListener("click", displayNav);
+iconHamburger.addEventListener("click", removeNav);
+
