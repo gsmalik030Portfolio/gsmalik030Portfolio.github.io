@@ -46,6 +46,10 @@ a {
   scroll-behavior: smooth;
 }
 
+.nav-link {
+  color: var(--color-secondary);
+}
+
 ul {
   display: flex;
   align-items: center;
@@ -90,7 +94,7 @@ p {
   border-bottom-left-radius: 5rem;
 }
 
-.cell-nav{
+.cell-nav {
   width: 1.8rem;
   height: 1.2rem;
   margin: 3.6rem;
@@ -132,10 +136,9 @@ p {
   display: flex;
 }
 
-.HamBurger-hide{
-  visibility: hidden;
+.HamBurger-hide {
+  display: none;
 }
-
 
 .header-container {
   width: 100%;
