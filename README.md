@@ -14,6 +14,7 @@ My Microverse Portfolio Project</b></h3>
 
 - HTML 5
 - CSS 3
+
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -123,7 +124,6 @@ Clone this repository to your desired folder:
 
 **Just clone the project by runing the `git clone git@github.com:gsmalik030/Portfolio-Setup-and-Mobile-first.git` command in your command line, and you are done.**
 
-
 ### Install
 
 Install this project with:
@@ -187,19 +187,11 @@ Example:
 - Twitter: [@twitterhandle](https://twitter.com/gsmalik030)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ghulam-subbhani-4b1281252/)
 
-👤 **Ivan Ludick**
+👤 **Rachel Isaac**
 
-- GitHub: [@githubhandle](https://github.com/IvanLudick)
-- Twitter: [@twitterhandle](https://twitter.com/Ivan_Ludick258)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ivan-ludick-11a055243/)
-
-
-👤 **Eugene Iyukhun**
-
-- GitHub: [@githubhandle](https://github.com/Eugeneiyukhun)
-- Twitter: [@twitterhandle](https://twitter.com/Eugeneiyukhun)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/Eugeneiyukhun)
-
+- GitHub: [@githubhandle](https://github.com/Rachelwebdev)
+- Twitter: [@twitterhandle](https://twitter.com/Rachelisaac13)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/rachelisaac13/)
 
 <!-- FUTURE FEATURES -->
 
