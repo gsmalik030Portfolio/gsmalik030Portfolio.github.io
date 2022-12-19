@@ -424,7 +424,7 @@ textarea {
   }
 
   .mobile-nav {
-    visibility: hidden;
+    display: none;
   }
 
   .desktop-nav {
