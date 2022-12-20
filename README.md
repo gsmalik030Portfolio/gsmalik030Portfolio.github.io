@@ -256,7 +256,6 @@ I would like to thank...
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://github.com/gsmalik030Portfolio/gsmalik030Portfolio.github.io/blob/main/LICENSE) 
+(https://github.com/gsmalik030Portfolio/gsmalik030Portfolio.github.io/blob/main/LICENSE) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
