@@ -14,13 +14,30 @@
   <body>
     <header class="header-container">
       <a href="#" class="logo">My Logo </a>
-      <nav>
-        <img class="mobile-nav" src="images/Union.png" alt=" Navigation " />
+      <nav class="desktop-nav-display">
+        <img
+          class="mobile-nav cell-nav"
+          src="images/Union.png"
+          alt=" Navigation "
+        />
+
         <ul class="desktop-nav">
-          <li>Portfolio</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+      </nav>
+      <nav class="cellphone-nav">
+        <ul class="nav">
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <img
+          class="mobile-nav-icon cell-nav"
+          src="images/Icon.svg"
+          alt=" Navigation"
+        />
       </nav>
     </header>
     <div class="container">
@@ -65,7 +82,7 @@
       </section>
     </div>
 
-    <section title="portfolio-snapshot" class="card-works-box">
+    <section id="portfolio" title="portfolio-snapshot" class="card-works-box">
       <article class="card-work flex-order">
         <picture>
           <source
@@ -213,7 +230,7 @@
         </div>
       </article>
     </section>
-    <section class="about-contact-box">
+    <section id="about" class="about-contact-box">
       <section aria-labelledby="about-myself" class="about-myself about-box">
         <article>
           <h2 id="about-myself" class="heading-about">About Myself</h2>
@@ -262,7 +279,11 @@
           </div>
           <ul class="language-box">
             <li class="language-frame">
-              <img class="ellipse" src="images/Ellipse 1.png" alt="JavaSript icon" />
+              <img
+                class="ellipse"
+                src="images/Ellipse 1.png"
+                alt="JavaSript icon"
+              />
               <h4 class="ellipse-text">JavaSript</h4>
             </li>
             <li class="language-frame">
@@ -287,6 +308,7 @@
         </article>
       </section>
       <form
+        id="contact"
         class="form-container"
         action="https://formspree.io/f/xqkjrppo"
         method="post"
@@ -298,7 +320,7 @@
           with it
         </p>
         <article class="input-container">
-          <label for="name" >Name</label>
+          <label for="name">Name</label>
           <input
             class="contact-input"
             id="name"
@@ -332,5 +354,6 @@
         </article>
       </form>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
