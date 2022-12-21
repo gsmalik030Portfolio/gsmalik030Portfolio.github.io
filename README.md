@@ -10,17 +10,29 @@ My Microverse Portfolio Project</b></h3>
 
 </div>
 
-## Built With
+  # 🛠 Built With
 
 - HTML 5
 - CSS 3
+- Javascript
+
+ # Key Features
+
+ > This is first Portfolio website.
+ > It shows all my work history.
+
+
+# 🔭 Future Features
+
+ > I will be adding form validation next.
+
+
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
+- [📖 About the Project]()
+
     - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -30,12 +42,20 @@ My Microverse Portfolio Project</b></h3>
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 - [❓ FAQ](#faq)
 - [📝 License](#license)
+
+## Learning Objectives
+
+- Understand how to parse a Figma design to create a UI.
+- Flexbox to place elements in the page.
+- Build a personal portfolio site.
+- Use images and backgrounds to enhance the look of the website.
+- How to use javascript to add functionallity to my website.
+- How to use Javascript objects.
 
 # 📖 Portfolio Setup and Mobile first
 
@@ -82,8 +102,8 @@ My Microverse Portfolio Project</b></h3>
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
+- **[It's detailed overview of my portfolio]**
+- **[It shows the projects i completed]**
 - **[key_feature_3]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
