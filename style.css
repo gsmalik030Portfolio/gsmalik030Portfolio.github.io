@@ -296,8 +296,8 @@ max-height: 100vh;
   display: flex;
 }
 .popup-icon{
-  height: 1.2rem;
-  width: 1.2rem;
+  height: 2rem;
+  width: 2rem;
   position: absolute;
   top: 1rem;
   right: 1rem;
