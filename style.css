@@ -203,11 +203,28 @@ label {
   animation: pop 2s ease-in;
 }
 
-.popup-btn{
+.button-icons {
+  height: 2rem;
+}
+
+.popup-btn {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   align-items: center;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.desktop-fw {
+  display: none;
+}
+
+.line {
+  margin-top: 2.5rem;
+}
+
+.popup-card-work {
+  border-radius: 0.8rem;
 }
 
 .counter {
@@ -281,30 +298,27 @@ img {
   gap: 8.8rem;
 }
 
-.popup{
-
-/* display: none; */
-background-color: var(--color-secondary);
-position: absolute;
-z-index: 1;
-width: 100%;
-overflow-y: auto;
-max-height: 100vh;
+.popup {
+  display: none;
+  background: #c1c7d0;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  overflow-y: auto;
+  max-height: 100vh;
+  padding: 5rem 1.6rem;
 }
 
-.popup-active{
-  display: flex;
+.popup-active {
+  display: block !important;
 }
-.popup-icon{
+
+.popup-icon {
   height: 2rem;
   width: 2rem;
   position: absolute;
   top: 1rem;
   right: 1rem;
-}
-
-.popup-btn-container{
-  flex-direction: column;
 }
 
 .about-contact-box {
@@ -363,6 +377,11 @@ max-height: 100vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.popup-card-info-box {
+  display: grid;
+  margin: 0 3rem;
 }
 
 .framework-heading {
@@ -545,9 +564,16 @@ textarea {
     align-items: center;
   }
 
-  .popup-btn{
-    flex-direction: row;
-    justify-content: center;
+  .desktop-fw {
+    display: flex;
   }
 
+  .popup-card-info-box {
+    grid-template-columns: 72% 28%;
+    gap: 2rem;
+  }
+
+  .popup {
+    padding: 7.7rem 14.2rem;
+  }
 }
