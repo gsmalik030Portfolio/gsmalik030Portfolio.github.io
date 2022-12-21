@@ -283,7 +283,7 @@ img {
 
 .popup{
 
-display: none;
+/* display: none; */
 background-color: var(--color-secondary);
 position: absolute;
 z-index: 1;
@@ -301,6 +301,10 @@ max-height: 100vh;
   position: absolute;
   top: 1rem;
   right: 1rem;
+}
+
+.popup-btn-container{
+  flex-direction: column;
 }
 
 .about-contact-box {

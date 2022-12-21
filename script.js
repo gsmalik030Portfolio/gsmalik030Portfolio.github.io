@@ -111,8 +111,22 @@ function creatPopup(){
         <li class="framework btn--normal framework4"></li>
       </ul>
       <div class="popup-btn">
-        <a href="" class="demo "><button class="btn btn--normal btn-card">See Live</button></a>
-        <a href="" class="source"><button class="btn btn--normal btn-card">See Source</button></a>
+        <a class="btn btn--normal btn-card popup-btn" href="" class="demo ">
+        See Live 
+        <span>
+          <img
+            class="button-icons"
+            src="./images/see-live-icon.svg"
+            alt="white live icon" /></span>
+        </a>
+        <a class="btn btn--normal btn-card popup-btn" href="" class="source">
+        See Source
+        <span>
+          <img
+            class="button-icons"
+            src="./images/github-popup-icon.svg"
+            alt="white github icon"/></span>
+        </a>
       </div>
     </div>
   </article>
