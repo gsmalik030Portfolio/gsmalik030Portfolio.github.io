@@ -190,6 +190,12 @@ label {
   border: 1px solid var(--color-primary);
 }
 
+.source,
+.demo {
+  padding: 1.2rem 1rem;
+  font-size: 1.5rem;
+}
+
 .btn--normal {
   background-color: var(--color-secondary);
   color: var(--color-btn-text);
@@ -200,7 +206,33 @@ label {
   color: var(--color-secondary);
   background-color: var(--color-primary);
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-  animation: pop 2s ease-out;
+  animation: pop 2s ease-in;
+}
+
+.button-icons {
+  height: 2rem;
+}
+
+.popup-btn {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.desktop-fw {
+  display: none;
+}
+
+.line {
+  margin-top: 2.5rem;
+}
+
+.popup-card-work {
+  border-radius: 0.8rem;
+  width: 82%;
+  margin: 3rem 0;
 }
 
 .counter {
@@ -253,6 +285,7 @@ img {
   flex-direction: column;
   grid-template-rows: 1fr 1fr;
   gap: 1.6rem;
+  position: relative;
 }
 
 .ruby {
@@ -271,6 +304,29 @@ img {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   gap: 8.8rem;
+}
+
+.popup {
+  display: none;
+  background: rgb(193, 199, 208, 70%);
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  overflow-y: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-active {
+  display: flex !important;
+}
+
+.popup-icon {
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 
 .about-contact-box {
@@ -329,6 +385,11 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.popup-card-info-box {
+  display: grid;
+  margin: 0 3rem;
 }
 
 .framework-heading {
@@ -434,6 +495,10 @@ textarea {
     margin: 2.4rem;
   }
 
+  .popup .card-work {
+    margin: 0;
+  }
+
   .ruby {
     display: block;
   }
@@ -509,5 +574,18 @@ textarea {
   .input-container {
     justify-content: center;
     align-items: center;
+  }
+
+  .desktop-fw {
+    display: flex;
+  }
+
+  .popup-card-info-box {
+    grid-template-columns: 70% 30%;
+    gap: 2rem;
+  }
+
+  .popup {
+    padding: 5rem 0;
   }
 }
