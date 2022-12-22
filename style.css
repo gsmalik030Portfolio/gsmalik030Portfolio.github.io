@@ -308,7 +308,7 @@ img {
 
 .popup {
   display: none;
-  background: rgb(193, 199, 208, 80%);
+  background: rgb(193, 199, 208, 70%);
   position: absolute;
   z-index: 1;
   width: 100%;

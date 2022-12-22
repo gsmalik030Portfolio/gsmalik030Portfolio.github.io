@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Inter:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body">
     <header class="header-container">
       <a href="#" class="logo">My Logo </a>
       <nav class="desktop-nav-display">
@@ -67,13 +81,12 @@
         </article>
       </section>
     </div>
-    
     <section id="portfolio" title="portfolio-snapshot" class="card-works-box">
       <article class="card-work flex-order">
         <picture>
           <source
             media="(min-width:1230px)"
-            srcset="images/desktop-snapshot-3.svg"
+            srcset="images/desktop-snapshot-1.svg"
           />
           <source
             media="(min-width:400px)"
@@ -101,7 +114,7 @@
             <li class="framework btn--normal">javascript</li>
           </ul>
           <div>
-            <button type="button" id="0" class="btn btn--normal btn-card card-btn">See Project</button>
+            <a href="#popup"><button type="button" id="0" class="btn btn--normal btn-card card-btn">See Project</button></a>
           </div>
         </div>
       </article>
@@ -109,7 +122,7 @@
         <picture>
           <source
             media="(min-width:1230px)"
-            srcset="images/desktop-snapshot-4.svg"
+            srcset="images/desktop-snapshot-2.svg"
           />
           <source
             media="(min-width:400px)"
@@ -138,15 +151,15 @@
             <li class="framework btn--normal">javascript</li>
           </ul>
           <div>
-            <button type="button" id="1" class="btn btn--normal btn-card card-btn">See Project</button>
+            <a href="#popup"><button type="button" id="1" class="btn btn--normal btn-card card-btn">See Project</button></a>
           </div>
         </div>
       </article>
       <article class="card-work flex-order">
         <picture>
-          <source
+          <source 
             media="(min-width:1230px)"
-            srcset="images/desktop-snapshot-1.svg"
+            srcset="images/desktop-snapshot-3.svg"
           />
           <source
             media="(min-width:400px)"
@@ -175,7 +188,7 @@
             <li class="framework btn--normal">javascript</li>
           </ul>
           <div>
-            <button type="button" id="2" class="btn btn--normal btn-card card-btn">See Project</button>
+            <a href="#popup"><button type="button" id="2" class="btn btn--normal btn-card card-btn">See Project</button></a>
           </div>
         </div>
       </article>
@@ -183,7 +196,7 @@
         <picture>
           <source
             media="(min-width:1230px)"
-            srcset="images/desktop-snapshot-2.svg"
+            srcset="images/desktop-snapshot-4.svg"
           />
           <source
             media="(min-width:400px)"
@@ -211,7 +224,7 @@
             <li class="framework btn--normal">javascript</li>
           </ul>
           <div>
-            <button type="button" id="3" class="btn btn--normal btn-card card-btn">See Project</button>
+            <a href="#popup"><button type="button" id="3" class="btn btn--normal btn-card card-btn">See Project</button></a>
           </div>
         </div>
       </article>
@@ -340,3 +353,6 @@
         </article>
       </form>
     </section>
+    <script src="script.js"></script>
+  </body>
+</html>
