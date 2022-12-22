@@ -24,6 +24,7 @@ for (let i = 0; i < hamburgerNavLinks.length; i++) {
 const projects = [
   {
     image: 'images/mobile-Snapshoot-1.svg',
+    desktopImg: 'images/desktop-snapshot-1.svg',
     title: 'Topic',
     name: 'CANOPY',
     devloper: 'Back End Dev',
@@ -40,6 +41,7 @@ const projects = [
   },
   {
     image: 'images/mobile-Snapshoot-2.svg',
+    desktopImg: 'images/desktop-snapshot-2.svg',
     title: 'Multi-Post Stories',
     name: 'FACEBOOK',
     devloper: 'Back End Dev',
@@ -55,6 +57,7 @@ const projects = [
     source: 'https://github.com/gsmalik030Portfolio/gsmalik030Portfolio.github.io',
   }, {
     image: 'images/mobile-Snapshoot-3.svg',
+    desktopImg: 'images/desktop-snapshot-3.svg',
     title: 'Facebook 360',
     name: 'FACEBOOK',
     devloper: 'Back End Dev',
@@ -71,6 +74,7 @@ const projects = [
   },
   {
     image: 'images/mobile-Snapshoot-4.svg',
+    desktopImg: 'images/desktop-snapshot-4.svg',
     title: 'Uber Navigation',
     name: 'UBER',
     devloper: 'Back End Dev',
@@ -105,7 +109,18 @@ function creatPopup() {
   </ul>
   </div>
     <img class="popup-icon" src="images/x-symbol-svgrepo-com.svg" alt="">
-      <img class="project-image" src="" alt=" Portfolio snapshoot" />
+
+    <picture>
+    <source class="desktop-img"
+      media="(min-width:1230px)"
+      srcset=""
+    />
+    <source class="mobile-img"
+      media="(min-width:400px)"
+      srcset=""
+    />
+    <img class="project-image" src="" alt="Portfolio snapshoot" />
+  </picture>
     <div class="popup-card-info-box">
       <p class="clint-info-text">
       </p>
@@ -145,6 +160,8 @@ function creatPopup() {
 creatPopup();
 const projectTitle = document.querySelector('.client-title');
 const projectImage = document.querySelector('.project-image');
+const desktopImg = document.querySelector('.desktop-img');
+const mobileImg = document.querySelector('.mobile-img');
 const projectName = document.querySelector('.client-name');
 const devloper = document.querySelector('.devloper');
 const year = document.querySelector('.year');
@@ -165,6 +182,9 @@ projectButton.forEach((button) => {
     // eslint-disable-next-line radix
     count = parseInt(button.id);
     projectTitle.textContent = projects[count].title;
+    projectImage.setAttribute('src', projects[count].image);
+    mobileImg.setAttribute('srcset', projects[count].image);
+    desktopImg.setAttribute('srcset', projects[count].desktopImg);
     projectImage.setAttribute('src', projects[count].image);
     projectName.textContent = `${projects[count].name}`;
     devloper.textContent = `${projects[count].devloper}`;
