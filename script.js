@@ -239,7 +239,6 @@ for (let num = 3; num >= 0; num--) {
   framework2Main.textContent = `${projects[num].framework2}`;
   framework3Main.textContent = `${projects[num].framework3}`;
   framework4Main.textContent = `${projects[num].framework4}`;
-  console.log(projectbtn);
   projectbtn.setAttribute('id', projects[num].btnId);
 }
 creatPopup();
@@ -292,3 +291,18 @@ const popupIcon = document.querySelector('.popup-icon');
 popupIcon.addEventListener('click', () => {
   popupSection.classList.remove('popup-active');
 });
+
+
+/* Form Validation */
+
+const email =document.getElementById('email')
+const errorMessage = document.querySelector('.error-message')
+const formButton = document.querySelector('.btn-form')
+
+if(email.validity.patternMismatch ){
+  
+}
+
+console.log(formButton);
+console.log(errorMessage);
+
