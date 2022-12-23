@@ -29,16 +29,20 @@ const projects = [
     name: 'CANOPY',
     devloper: 'Back End Dev',
     year: '2015',
-    projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    projectDescription:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     framework1: 'html',
     framework2: 'CSS',
     framework3: 'javascript',
     framework4: 'Ruby',
     framework5: 'Github',
     framework6: 'Bootstrap',
+    btnId: 0,
     demo: 'https://gsmalik030portfolio.github.io/',
-    source: 'https://github.com/gsmalik030Portfolio/gsmalik030Portfolio.github.io',
+    source:
+      'https://github.com/gsmalik030Portfolio/gsmalik030Portfolio.github.io',
   },
   {
     image: 'images/mobile-Snapshoot-2.svg',
@@ -47,33 +51,42 @@ const projects = [
     name: 'FACEBOOK',
     devloper: 'Back End Dev',
     year: '2015',
-    projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    projectDescription:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     framework1: 'html',
     framework2: 'CSS',
     framework3: 'javascript',
     framework4: 'Ruby',
     framework5: 'Github',
     framework6: 'Bootstrap',
+    btnId: 1,
     demo: 'https://gsmalik030portfolio.github.io/',
-    source: 'https://github.com/gsmalik030Portfolio/gsmalik030Portfolio.github.io',
-  }, {
+    source:
+      'https://github.com/gsmalik030Portfolio/gsmalik030Portfolio.github.io',
+  },
+  {
     image: 'images/mobile-Snapshoot-3.svg',
     desktopImg: 'images/desktop-snapshot-3.svg',
     title: 'Facebook 360',
     name: 'FACEBOOK',
     devloper: 'Back End Dev',
     year: '2015',
-    projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    projectDescription:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     framework1: 'html',
     framework2: 'CSS',
     framework3: 'javascript',
     framework4: 'Ruby',
     framework5: 'Github',
     framework6: 'Bootstrap',
+    btnId: 2,
     demo: 'https://gsmalik030portfolio.github.io/',
-    source: 'https://github.com/gsmalik030Portfolio/gsmalik030Portfolio.github.io',
+    source:
+      'https://github.com/gsmalik030Portfolio/gsmalik030Portfolio.github.io',
   },
   {
     image: 'images/mobile-Snapshoot-4.svg',
@@ -82,16 +95,20 @@ const projects = [
     name: 'UBER',
     devloper: 'Back End Dev',
     year: '2015',
-    projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    projectDescription:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     framework1: 'html',
     framework2: 'CSS',
     framework3: 'javascript',
     framework4: 'Ruby',
     framework5: 'Github',
     framework6: 'Bootstrap',
+    btnId: 3,
     demo: 'https://gsmalik030portfolio.github.io/',
-    Source: 'https://github.com/gsmalik030Portfolio/gsmalik030Portfolio.github.io',
+    Source:
+      'https://github.com/gsmalik030Portfolio/gsmalik030Portfolio.github.io',
   },
 ];
 
@@ -101,7 +118,9 @@ const startPoint = document.querySelector('.body');
 const projectStartPoint = document.querySelector('.Projects');
 
 function creatPopup() {
-  startPoint.insertAdjacentHTML('afterbegin', `    <section id="popup" class="popup">
+  startPoint.insertAdjacentHTML(
+    'afterbegin',
+    `    <section id="popup" class="popup">
   <article class="card-work popup-card-work">
   <div class="card-info-box">
   <h2 class="client-title popup-title"></h2>
@@ -160,10 +179,13 @@ function creatPopup() {
       </div>
     </div>
   </article>
-</section>`);
+</section>`,
+  );
 }
 function creatProject() {
-  projectStartPoint.insertAdjacentHTML('afterbegin', `
+  projectStartPoint.insertAdjacentHTML(
+    'afterbegin',
+    `
   <article class="card-work flex-order order">
   <picture>
   <source class="main-desktop-img"
@@ -194,15 +216,16 @@ function creatProject() {
       <li class="framework btn--normal ruby main-framework4"></li>
     </ul>
     <div>
-      <a href="#popup"><button type="button" id="0" class="btn btn--normal btn-card card-btn">See Project</button></a>
+      <a href="#popup"><button type="button" id="" class="btn btn--normal btn-card card-btn">See Project</button></a>
     </div>
   </div>
 </article>
-`);
+`,
+  );
 }
 
 // eslint-disable-next-line no-plusplus
-for (let num = 0; num < 4; num++) {
+for (let num = 3; num >= 0; num--) {
   creatProject();
   const projectTitleMain = document.querySelector('.main-title');
   const projectImageMain = document.querySelector('.main-image');
@@ -216,6 +239,7 @@ for (let num = 0; num < 4; num++) {
   const framework2Main = document.querySelector('.main-framework2');
   const framework3Main = document.querySelector('.main-framework3');
   const framework4Main = document.querySelector('.main-framework4');
+  const projectbtn = document.querySelector('.card-btn');
   const order = document.querySelector('.order');
   if (num === 0 || num === 3) {
     order.classList.add('flex-order-reveerse');
@@ -234,6 +258,7 @@ for (let num = 0; num < 4; num++) {
   framework2Main.textContent = `${projects[num].framework2}`;
   framework3Main.textContent = `${projects[num].framework3}`;
   framework4Main.textContent = `${projects[num].framework4}`;
+  projectbtn.setAttribute('id', projects[num].btnId);
 }
 creatPopup();
 
@@ -259,8 +284,7 @@ const popupSection = document.querySelector('.popup');
 
 projectButton.forEach((button) => {
   button.addEventListener('click', () => {
-    // eslint-disable-next-line radix
-    count = parseInt(button.id);
+    count = parseInt(button.id, 10);
     projectTitle.textContent = projects[count].title;
     projectImage.setAttribute('src', projects[count].image);
     mobileImg.setAttribute('srcset', projects[count].image);
@@ -284,4 +308,26 @@ projectButton.forEach((button) => {
 const popupIcon = document.querySelector('.popup-icon');
 popupIcon.addEventListener('click', () => {
   popupSection.classList.remove('popup-active');
+});
+
+/* Form Validation */
+
+const email = document.getElementById('email');
+const errorMessage = document.getElementById('error-message');
+const formButton = document.querySelector('.btn-form');
+
+formButton.addEventListener('click', (event) => {
+  if (email.validity.typeMismatch) {
+    errorMessage.textContent = 'Please Use Valid Email !';
+    errorMessage.classList.add('error-message');
+    event.preventDefault();
+    return;
+  }
+  if (email.validity.patternMismatch) {
+    errorMessage.textContent = 'Please use lowercase letters !';
+    errorMessage.classList.add('error-message');
+    event.preventDefault();
+    return;
+  }
+  formButton.submit();
 });

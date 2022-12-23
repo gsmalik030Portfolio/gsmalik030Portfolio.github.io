@@ -189,6 +189,7 @@
             id="email"
             name="email"
             type="email"
+            pattern="[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
             placeholder="natajayanj14@gmail.com"
             required
           />
@@ -201,6 +202,7 @@
             placeholder="Write your message here"
             required
           ></textarea>
+          <div id="error-message" class=""></div>
           <button type="submit" class="btn btn--normal btn-form">
             Get In Touch
           </button>
