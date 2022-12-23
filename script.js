@@ -37,6 +37,7 @@ const projects = [
     framework4: 'Ruby',
     framework5: 'Github',
     framework6: 'Bootstrap',
+    btnId: 0,
     demo: 'https://gsmalik030portfolio.github.io/',
     source: 'https://github.com/gsmalik030Portfolio/gsmalik030Portfolio.github.io',
   },
@@ -55,6 +56,7 @@ const projects = [
     framework4: 'Ruby',
     framework5: 'Github',
     framework6: 'Bootstrap',
+    btnId: 1,
     demo: 'https://gsmalik030portfolio.github.io/',
     source: 'https://github.com/gsmalik030Portfolio/gsmalik030Portfolio.github.io',
   }, {
@@ -72,6 +74,7 @@ const projects = [
     framework4: 'Ruby',
     framework5: 'Github',
     framework6: 'Bootstrap',
+    btnId: 2,
     demo: 'https://gsmalik030portfolio.github.io/',
     source: 'https://github.com/gsmalik030Portfolio/gsmalik030Portfolio.github.io',
   },
@@ -90,6 +93,7 @@ const projects = [
     framework4: 'Ruby',
     framework5: 'Github',
     framework6: 'Bootstrap',
+    btnId: 3,
     demo: 'https://gsmalik030portfolio.github.io/',
     Source: 'https://github.com/gsmalik030Portfolio/gsmalik030Portfolio.github.io',
   },
@@ -194,7 +198,7 @@ function creatProject() {
       <li class="framework btn--normal ruby main-framework4"></li>
     </ul>
     <div>
-      <a href="#popup"><button type="button" id="0" class="btn btn--normal btn-card card-btn">See Project</button></a>
+      <a href="#popup"><button type="button" id="" class="btn btn--normal btn-card card-btn">See Project</button></a>
     </div>
   </div>
 </article>
@@ -202,7 +206,7 @@ function creatProject() {
 }
 
 // eslint-disable-next-line no-plusplus
-for (let num = 0; num < 4; num++) {
+for (let num = 3; num >= 0; num--) {
   creatProject();
   const projectTitleMain = document.querySelector('.main-title');
   const projectImageMain = document.querySelector('.main-image');
@@ -216,6 +220,7 @@ for (let num = 0; num < 4; num++) {
   const framework2Main = document.querySelector('.main-framework2');
   const framework3Main = document.querySelector('.main-framework3');
   const framework4Main = document.querySelector('.main-framework4');
+  const projectbtn = document.querySelector('.card-btn');
   const order = document.querySelector('.order');
   if (num === 0 || num === 3) {
     order.classList.add('flex-order-reveerse');
@@ -234,6 +239,8 @@ for (let num = 0; num < 4; num++) {
   framework2Main.textContent = `${projects[num].framework2}`;
   framework3Main.textContent = `${projects[num].framework3}`;
   framework4Main.textContent = `${projects[num].framework4}`;
+  console.log(projectbtn);
+  projectbtn.setAttribute('id', projects[num].btnId);
 }
 creatPopup();
 
