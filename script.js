@@ -1,125 +1,125 @@
-const hamBurger = document.querySelector(".mobile-nav");
-const cellphoneNav = document.querySelector(".cellphone-nav");
-const iconHamburger = document.querySelector(".mobile-nav-icon");
-const hamburgerNavLinks = document.querySelectorAll(".nav-link");
+const hamBurger = document.querySelector('.mobile-nav');
+const cellphoneNav = document.querySelector('.cellphone-nav');
+const iconHamburger = document.querySelector('.mobile-nav-icon');
+const hamburgerNavLinks = document.querySelectorAll('.nav-link');
 function displayNav() {
-  cellphoneNav.classList.toggle("active");
-  hamBurger.classList.toggle("HamBurger-hide");
+  cellphoneNav.classList.toggle('active');
+  hamBurger.classList.toggle('HamBurger-hide');
 }
 function removeNav() {
-  cellphoneNav.classList.remove("active");
-  hamBurger.classList.remove("HamBurger-hide");
+  cellphoneNav.classList.remove('active');
+  hamBurger.classList.remove('HamBurger-hide');
 }
 
-hamBurger.addEventListener("click", displayNav);
-iconHamburger.addEventListener("click", removeNav);
+hamBurger.addEventListener('click', displayNav);
+iconHamburger.addEventListener('click', removeNav);
 
 // eslint-disable-next-line no-plusplus
 for (let i = 0; i < hamburgerNavLinks.length; i++) {
-  hamburgerNavLinks[i].addEventListener("click", removeNav);
+  hamburgerNavLinks[i].addEventListener('click', removeNav);
 }
 
 /* Popups */
 
 const projects = [
   {
-    image: "images/mobile-Snapshoot-1.svg",
-    desktopImg: "images/desktop-snapshot-1.svg",
-    title: "Topic",
-    name: "CANOPY",
-    devloper: "Back End Dev",
-    year: "2015",
+    image: 'images/mobile-Snapshoot-1.svg',
+    desktopImg: 'images/desktop-snapshot-1.svg',
+    title: 'Topic',
+    name: 'CANOPY',
+    devloper: 'Back End Dev',
+    year: '2015',
     projectDescription:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    framework1: "html",
-    framework2: "CSS",
-    framework3: "javascript",
-    framework4: "Ruby",
-    framework5: "Github",
-    framework6: "Bootstrap",
+    framework1: 'html',
+    framework2: 'CSS',
+    framework3: 'javascript',
+    framework4: 'Ruby',
+    framework5: 'Github',
+    framework6: 'Bootstrap',
     btnId: 0,
-    demo: "https://gsmalik030portfolio.github.io/",
+    demo: 'https://gsmalik030portfolio.github.io/',
     source:
-      "https://github.com/gsmalik030Portfolio/gsmalik030Portfolio.github.io",
+      'https://github.com/gsmalik030Portfolio/gsmalik030Portfolio.github.io',
   },
   {
-    image: "images/mobile-Snapshoot-2.svg",
-    desktopImg: "images/desktop-snapshot-2.svg",
-    title: "Multi-Post Stories",
-    name: "FACEBOOK",
-    devloper: "Back End Dev",
-    year: "2015",
+    image: 'images/mobile-Snapshoot-2.svg',
+    desktopImg: 'images/desktop-snapshot-2.svg',
+    title: 'Multi-Post Stories',
+    name: 'FACEBOOK',
+    devloper: 'Back End Dev',
+    year: '2015',
     projectDescription:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    framework1: "html",
-    framework2: "CSS",
-    framework3: "javascript",
-    framework4: "Ruby",
-    framework5: "Github",
-    framework6: "Bootstrap",
+    framework1: 'html',
+    framework2: 'CSS',
+    framework3: 'javascript',
+    framework4: 'Ruby',
+    framework5: 'Github',
+    framework6: 'Bootstrap',
     btnId: 1,
-    demo: "https://gsmalik030portfolio.github.io/",
+    demo: 'https://gsmalik030portfolio.github.io/',
     source:
-      "https://github.com/gsmalik030Portfolio/gsmalik030Portfolio.github.io",
+      'https://github.com/gsmalik030Portfolio/gsmalik030Portfolio.github.io',
   },
   {
-    image: "images/mobile-Snapshoot-3.svg",
-    desktopImg: "images/desktop-snapshot-3.svg",
-    title: "Facebook 360",
-    name: "FACEBOOK",
-    devloper: "Back End Dev",
-    year: "2015",
+    image: 'images/mobile-Snapshoot-3.svg',
+    desktopImg: 'images/desktop-snapshot-3.svg',
+    title: 'Facebook 360',
+    name: 'FACEBOOK',
+    devloper: 'Back End Dev',
+    year: '2015',
     projectDescription:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    framework1: "html",
-    framework2: "CSS",
-    framework3: "javascript",
-    framework4: "Ruby",
-    framework5: "Github",
-    framework6: "Bootstrap",
+    framework1: 'html',
+    framework2: 'CSS',
+    framework3: 'javascript',
+    framework4: 'Ruby',
+    framework5: 'Github',
+    framework6: 'Bootstrap',
     btnId: 2,
-    demo: "https://gsmalik030portfolio.github.io/",
+    demo: 'https://gsmalik030portfolio.github.io/',
     source:
-      "https://github.com/gsmalik030Portfolio/gsmalik030Portfolio.github.io",
+      'https://github.com/gsmalik030Portfolio/gsmalik030Portfolio.github.io',
   },
   {
-    image: "images/mobile-Snapshoot-4.svg",
-    desktopImg: "images/desktop-snapshot-4.svg",
-    title: "Uber Navigation",
-    name: "UBER",
-    devloper: "Back End Dev",
-    year: "2015",
+    image: 'images/mobile-Snapshoot-4.svg',
+    desktopImg: 'images/desktop-snapshot-4.svg',
+    title: 'Uber Navigation',
+    name: 'UBER',
+    devloper: 'Back End Dev',
+    year: '2015',
     projectDescription:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    framework1: "html",
-    framework2: "CSS",
-    framework3: "javascript",
-    framework4: "Ruby",
-    framework5: "Github",
-    framework6: "Bootstrap",
+    framework1: 'html',
+    framework2: 'CSS',
+    framework3: 'javascript',
+    framework4: 'Ruby',
+    framework5: 'Github',
+    framework6: 'Bootstrap',
     btnId: 3,
-    demo: "https://gsmalik030portfolio.github.io/",
+    demo: 'https://gsmalik030portfolio.github.io/',
     Source:
-      "https://github.com/gsmalik030Portfolio/gsmalik030Portfolio.github.io",
+      'https://github.com/gsmalik030Portfolio/gsmalik030Portfolio.github.io',
   },
 ];
 
 let count = 0;
 
-const startPoint = document.querySelector(".body");
-const projectStartPoint = document.querySelector(".Projects");
+const startPoint = document.querySelector('.body');
+const projectStartPoint = document.querySelector('.Projects');
 
 function creatPopup() {
   startPoint.insertAdjacentHTML(
-    "afterbegin",
+    'afterbegin',
     `    <section id="popup" class="popup">
   <article class="card-work popup-card-work">
   <div class="card-info-box">
@@ -179,12 +179,12 @@ function creatPopup() {
       </div>
     </div>
   </article>
-</section>`
+</section>`,
   );
 }
 function creatProject() {
   projectStartPoint.insertAdjacentHTML(
-    "afterbegin",
+    'afterbegin',
     `
   <article class="card-work flex-order order">
   <picture>
@@ -220,36 +220,36 @@ function creatProject() {
     </div>
   </div>
 </article>
-`
+`,
   );
 }
 
 // eslint-disable-next-line no-plusplus
 for (let num = 3; num >= 0; num--) {
   creatProject();
-  const projectTitleMain = document.querySelector(".main-title");
-  const projectImageMain = document.querySelector(".main-image");
-  const desktopImgMain = document.querySelector(".main-desktop-img");
-  const mobileImgMain = document.querySelector(".main-mobile-img");
-  const projectNameMain = document.querySelector(".main-client-name");
-  const devloperMain = document.querySelector(".main-devloper");
-  const yearMain = document.querySelector(".main-year");
-  const descriptionMain = document.querySelector(".main-clint-info-text");
-  const framework1Main = document.querySelector(".main-framework1");
-  const framework2Main = document.querySelector(".main-framework2");
-  const framework3Main = document.querySelector(".main-framework3");
-  const framework4Main = document.querySelector(".main-framework4");
-  const projectbtn = document.querySelector(".card-btn");
-  const order = document.querySelector(".order");
+  const projectTitleMain = document.querySelector('.main-title');
+  const projectImageMain = document.querySelector('.main-image');
+  const desktopImgMain = document.querySelector('.main-desktop-img');
+  const mobileImgMain = document.querySelector('.main-mobile-img');
+  const projectNameMain = document.querySelector('.main-client-name');
+  const devloperMain = document.querySelector('.main-devloper');
+  const yearMain = document.querySelector('.main-year');
+  const descriptionMain = document.querySelector('.main-clint-info-text');
+  const framework1Main = document.querySelector('.main-framework1');
+  const framework2Main = document.querySelector('.main-framework2');
+  const framework3Main = document.querySelector('.main-framework3');
+  const framework4Main = document.querySelector('.main-framework4');
+  const projectbtn = document.querySelector('.card-btn');
+  const order = document.querySelector('.order');
   if (num === 0 || num === 3) {
-    order.classList.add("flex-order-reveerse");
+    order.classList.add('flex-order-reveerse');
   }
 
   projectTitleMain.textContent = projects[num].title;
-  projectImageMain.setAttribute("src", projects[num].image);
-  mobileImgMain.setAttribute("srcset", projects[num].image);
-  desktopImgMain.setAttribute("srcset", projects[num].desktopImg);
-  projectImageMain.setAttribute("src", projects[num].image);
+  projectImageMain.setAttribute('src', projects[num].image);
+  mobileImgMain.setAttribute('srcset', projects[num].image);
+  desktopImgMain.setAttribute('srcset', projects[num].desktopImg);
+  projectImageMain.setAttribute('src', projects[num].image);
   projectNameMain.textContent = `${projects[num].name}`;
   devloperMain.textContent = `${projects[num].devloper}`;
   yearMain.textContent = `${projects[num].year}`;
@@ -258,39 +258,39 @@ for (let num = 3; num >= 0; num--) {
   framework2Main.textContent = `${projects[num].framework2}`;
   framework3Main.textContent = `${projects[num].framework3}`;
   framework4Main.textContent = `${projects[num].framework4}`;
-  projectbtn.setAttribute("id", projects[num].btnId);
+  projectbtn.setAttribute('id', projects[num].btnId);
 }
 creatPopup();
 
 // Popup veriables
-const projectTitle = document.querySelector(".popup-title");
-const projectImage = document.querySelector(".popup-image");
-const desktopImg = document.querySelector(".popup-desktop-img");
-const mobileImg = document.querySelector(".popup-mobile-img");
-const projectName = document.querySelector(".popup-client-name");
-const devloper = document.querySelector(".popup-devloper");
-const year = document.querySelector(".popup-year");
-const description = document.querySelector(".popup-clint-info-text");
-const framework1 = document.querySelector(".popup-framework1");
-const framework2 = document.querySelector(".popup-framework2");
-const framework3 = document.querySelector(".popup-framework3");
-const framework4 = document.querySelector(".popup-framework4");
-const framework5 = document.querySelector(".popup-framework5");
-const framework6 = document.querySelector(".popup-framework6");
-const demoLink = document.querySelector(".demo");
-const sourceLink = document.querySelector(".source");
-const projectButton = document.querySelectorAll(".card-btn");
-const popupSection = document.querySelector(".popup");
+const projectTitle = document.querySelector('.popup-title');
+const projectImage = document.querySelector('.popup-image');
+const desktopImg = document.querySelector('.popup-desktop-img');
+const mobileImg = document.querySelector('.popup-mobile-img');
+const projectName = document.querySelector('.popup-client-name');
+const devloper = document.querySelector('.popup-devloper');
+const year = document.querySelector('.popup-year');
+const description = document.querySelector('.popup-clint-info-text');
+const framework1 = document.querySelector('.popup-framework1');
+const framework2 = document.querySelector('.popup-framework2');
+const framework3 = document.querySelector('.popup-framework3');
+const framework4 = document.querySelector('.popup-framework4');
+const framework5 = document.querySelector('.popup-framework5');
+const framework6 = document.querySelector('.popup-framework6');
+const demoLink = document.querySelector('.demo');
+const sourceLink = document.querySelector('.source');
+const projectButton = document.querySelectorAll('.card-btn');
+const popupSection = document.querySelector('.popup');
 
 projectButton.forEach((button) => {
-  button.addEventListener("click", () => {
+  button.addEventListener('click', () => {
     // eslint-disable-next-line radix
     count = parseInt(button.id);
     projectTitle.textContent = projects[count].title;
-    projectImage.setAttribute("src", projects[count].image);
-    mobileImg.setAttribute("srcset", projects[count].image);
-    desktopImg.setAttribute("srcset", projects[count].desktopImg);
-    projectImage.setAttribute("src", projects[count].image);
+    projectImage.setAttribute('src', projects[count].image);
+    mobileImg.setAttribute('srcset', projects[count].image);
+    desktopImg.setAttribute('srcset', projects[count].desktopImg);
+    projectImage.setAttribute('src', projects[count].image);
     projectName.textContent = `${projects[count].name}`;
     devloper.textContent = `${projects[count].devloper}`;
     year.textContent = `${projects[count].year}`;
@@ -301,25 +301,34 @@ projectButton.forEach((button) => {
     framework4.textContent = `${projects[count].framework4}`;
     framework5.textContent = `${projects[count].framework5}`;
     framework6.textContent = `${projects[count].framework6}`;
-    demoLink.setAttribute("href", `${projects[count].demo}`);
-    sourceLink.setAttribute("href", `${projects[count].source}`);
-    popupSection.classList.add("popup-active");
+    demoLink.setAttribute('href', `${projects[count].demo}`);
+    sourceLink.setAttribute('href', `${projects[count].source}`);
+    popupSection.classList.add('popup-active');
   });
 });
-const popupIcon = document.querySelector(".popup-icon");
-popupIcon.addEventListener("click", () => {
-  popupSection.classList.remove("popup-active");
+const popupIcon = document.querySelector('.popup-icon');
+popupIcon.addEventListener('click', () => {
+  popupSection.classList.remove('popup-active');
 });
 
 /* Form Validation */
 
-const email = document.getElementById("email");
-const errorMessage = document.querySelector(".error-message");
-const formButton = document.querySelector(".btn-form");
+const email = document.getElementById('email');
+const errorMessage = document.getElementById('error-message');
+const formButton = document.querySelector('.btn-form');
 
-if (email.validity.patternMismatch) {
-  errorMessage.textContent = "Please use lowercase letters";
-}
-
-console.log(formButton);
-console.log(errorMessage);
+formButton.addEventListener('click', (event) => {
+  if (email.validity.typeMismatch) {
+    errorMessage.textContent = 'Please Use Valid Email !';
+    errorMessage.classList.add('error-message');
+    event.preventDefault();
+    return;
+  }
+  if (email.validity.patternMismatch) {
+    errorMessage.textContent = 'Please use lowercase letters !';
+    errorMessage.classList.add('error-message');
+    event.preventDefault();
+    return;
+  }
+  formButton.submit();
+});
