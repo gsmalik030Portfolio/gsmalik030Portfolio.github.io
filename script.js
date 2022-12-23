@@ -284,8 +284,7 @@ const popupSection = document.querySelector('.popup');
 
 projectButton.forEach((button) => {
   button.addEventListener('click', () => {
-    // eslint-disable-next-line radix
-    count = parseInt(button.id);
+    count = parseInt(button.id, 10);
     projectTitle.textContent = projects[count].title;
     projectImage.setAttribute('src', projects[count].image);
     mobileImg.setAttribute('srcset', projects[count].image);
