@@ -320,6 +320,9 @@ formButton.addEventListener('click', (event) => {
   if (email.validity.typeMismatch) {
     errorMessage.textContent = 'Please Use Valid Email !';
     errorMessage.classList.add('error-message');
+    console.log(email.value);
+console.log(formName.value);
+console.log(formMessage.value);
     event.preventDefault();
     return;
   }
@@ -329,5 +332,31 @@ formButton.addEventListener('click', (event) => {
     event.preventDefault();
     return;
   }
+  
   formButton.submit();
 });
+
+/* Local Storage */
+
+
+const formName = document.getElementById('name');
+const formMessage = document.getElementById('message');
+
+function saveData() {
+  const contactForm = document.getElementById('contact');
+  const formData = new FormData(contactForm);
+  const formObject = Object.fromEntries(formData.entries());
+  localStorage.setItem('form', JSON.stringify(formObject));
+}
+
+email.addEventListener('keydown', saveData);
+formName.addEventListener('keydown', saveData);
+formMessage.addEventListener('keydown', saveData);
+
+const savedData = JSON.parse(
+  localStorage.getItem('form') ?? '{}',
+);
+
+
+
+
