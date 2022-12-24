@@ -14,8 +14,7 @@ function removeNav() {
 hamBurger.addEventListener('click', displayNav);
 iconHamburger.addEventListener('click', removeNav);
 
-// eslint-disable-next-line no-plusplus
-for (let i = 0; i < hamburgerNavLinks.length; i++) {
+for (let i = 0; i < hamburgerNavLinks.length; i += 1) {
   hamburgerNavLinks[i].addEventListener('click', removeNav);
 }
 
@@ -224,8 +223,7 @@ function creatProject() {
   );
 }
 
-// eslint-disable-next-line no-plusplus
-for (let num = 3; num >= 0; num--) {
+for (let num = 3; num >= 0; num -= 1) {
   creatProject();
   const projectTitleMain = document.querySelector('.main-title');
   const projectImageMain = document.querySelector('.main-image');
@@ -329,5 +327,28 @@ formButton.addEventListener('click', (event) => {
     event.preventDefault();
     return;
   }
+
   formButton.submit();
 });
+
+/* Local Storage */
+
+const formName = document.getElementById('name');
+const formMessage = document.getElementById('message');
+
+function saveData() {
+  const contactForm = document.getElementById('contact');
+  const formData = new FormData(contactForm);
+  const formObject = Object.fromEntries(formData.entries());
+  localStorage.setItem('form', JSON.stringify(formObject));
+}
+
+email.addEventListener('keydown', saveData);
+formName.addEventListener('keydown', saveData);
+formMessage.addEventListener('keydown', saveData);
+
+const savedData = JSON.parse(localStorage.getItem('form') ?? '{}');
+
+formName.value = savedData.name ?? '';
+email.value = savedData.email ?? '';
+formMessage.value = savedData.message ?? '';
